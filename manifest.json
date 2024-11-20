@@ -1,0 +1,20 @@
+{
+    "name": "Nimblr Autofill",
+    "version": "6.9",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "js": [ 
+                "autofill.js"
+            ],
+            "matches": [
+                "https://nimblr.net/course/introduction/*"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
